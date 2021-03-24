@@ -1,2 +1,2 @@
-#dfgdfgdfg
+# 清除空白
 print("1234")
