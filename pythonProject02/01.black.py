@@ -1,3 +1,4 @@
+'''
 favorite_language = ' python '
 print(favorite_language)
 
@@ -9,3 +10,7 @@ print(favorite_language.lstrip())
 
 # 删除前后的空格
 print(favorite_language.strip())
+'''
+# 如何正确使用单双引号
+message = "One of Python's strengths is its diverse community."
+print(message)
