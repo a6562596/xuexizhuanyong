@@ -47,7 +47,7 @@ ya = 'honda'
 motor.remove(ya)
 print(motor)
 print(ya)
-'''
+
 
 # 练习
 canzhuo = []
@@ -66,13 +66,6 @@ print('共邀请了'+str(len(bunenglai)) + '人')
 del canzhuo[:]#清空整个列表
 print(canzhuo)
 
-'''
-# 删除列表中所有重复的元素
-motor =['honda','yamaha','suzuki','honda','honda']
-for de in motor:
-     if de == 'honda':
-         motor.remove('honda')
-print(motor)
 
 
 # 永久排序
@@ -109,6 +102,29 @@ motor =['chonda','ayamaha','bsuzuki']
 print(len(motor))
 
 
+# 删除列表中所有重复的元素
+motor =['yamaha','suzuki','honda','honda','honda']
+xin = []
+for de in motor:
+     if de not in xin:
+         xin.append(de)
+print(xin)
+
+for de2 in motor:
+    if de2 == 'honda':
+        motor.remove('honda')
+print(motor)
+
+# 数字去重
+num = [1,2,3,4,5,4,4,3]
+num2 = []
+for f in num:
+    if f not in num2:
+        num2.append(f)
+print(num2)
+
+
+
 # 练习1
 ly = ['beij','shangh','shenz','changs','hangz']
 print(ly)
@@ -127,4 +143,40 @@ ly.reverse()
 print(ly)
 ly.sort(reverse=True)
 print(ly)
+
+
+like = ['hrt','zmy','jay','dor']
+# 添加元素
+like.append('ang')
+print(like)
+# 弹出元素 没有指定索引直接弹出最后一个，可以把弹出的元素储存在变量中
+like.pop()
+print(like)
+tanchu = like.pop()
+print(tanchu)
+# 直接删除元素
+like = ['hrt','zmy','jay','dor']
+like.remove('jay')
+print(like)
+# 函数删除
+like = ['hrt','zmy','jay','dor']
+del like[0]
+print(like)
+
+# 排序
+like = ['hrt','zmy','jay','dor']
+like.sort() #按字母顺序排列（排序永久生效）
+print(like)
+like.reverse() #字母顺序倒序
+print(like)
+# 还原顺序
+like.reverse()
+print(like)
 '''
+like = ['hrt','zmy','jay','dor']
+a = sorted(like)
+print(a)
+a.reverse() #排序一次
+print(a)
+lens = len(like) #计算长度
+print(lens)
