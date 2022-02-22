@@ -68,13 +68,14 @@ favorite_languages = {
 for name, language in favorite_languages.items():
     print(name.title() + " 喜欢的语言是 " +language.title() + "。")
 
-#创建一个会被接受调查的人员名单
+#根据以上字典创建一个会被接受调查的人员名单
 diaocharenyuan_list = {
     'jen': 'python',
     'phil': 'python',
     'hrt':'a',
     'zmy':'b',
 }
+#循环会被调查人员的名单，然后对比上面的字典（favorite_languages）内容
 for key,value in diaocharenyuan_list.items():
     if key in favorite_languages:
         print("谢谢你"+key+"参与我们的调查")
