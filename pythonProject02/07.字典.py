@@ -57,7 +57,7 @@ for key,value in heliu_list.items():
 #打印字典中每个国家的名字
 for key, value in heliu_list.items():
     print("国家的名字都有 "+value)
-'''
+
 
 favorite_languages = {
 'jen': 'python',
@@ -81,3 +81,7 @@ for key,value in diaocharenyuan_list.items():
         print("谢谢你"+key+"参与我们的调查")
     else:
         print(key+"辛苦您来参加我们的调查！")
+'''
+
+
+# 嵌套（需要将一系列字典存储在列表中，或将列表作为值存储在字典中，这称为嵌套）
